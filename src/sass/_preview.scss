@@ -8,6 +8,13 @@
       transition: all 0.3s;
       border-right: 1px solid #fff;
       text-decoration: none;
+
+      @media only screen and (max-width: 768px) {
+        padding: 1rem 1rem;
+      }
+      @media only screen and (max-width: 576px) {
+        flex-direction: column;
+      }
     }
 
     &:hover {
@@ -28,6 +35,11 @@
     margin-right: 2rem;
     position: relative;
     backface-visibility: hidden;
+
+    @media only screen and (max-width: 576px) {
+      height: 4rem;
+      margin: 0;
+    }
 
     &::before {
       content: '';
@@ -60,6 +72,11 @@
     grid-template-columns: 1fr 2rem;
     row-gap: 0.1rem;
     align-items: center;
+
+    @media only screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -74,6 +91,10 @@
     max-width: 25rem;
     white-space: nowrap;
     overflow: hidden;
+
+    @media only screen and (max-width: 576px) {
+      font-size: 1.2rem;
+    }
   }
 
   &__publisher {
@@ -81,6 +102,10 @@
     color: $color-grey-dark-2;
     text-transform: uppercase;
     font-weight: 600;
+
+    @media only screen and (max-width: 576px) {
+      font-size: 1rem;
+    }
   }
 
   &__user-generated {

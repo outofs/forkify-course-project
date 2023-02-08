@@ -1,5 +1,11 @@
 .recipe {
   background-color: $color-grey-light-1;
+  @media only screen and (max-width: 576px) {
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 10rem);
+  }
 
   ///////////
   // FIGURE
@@ -8,6 +14,9 @@
     position: relative;
     // transform: scale(1.04) translateY(-1px);
     transform-origin: top;
+
+    @media only screen and (max-width: 576px) {
+    }
 
     &::before {
       content: '';
@@ -46,6 +55,10 @@
     line-height: 1.95;
     text-align: center;
 
+    @media only screen and (max-width: 576px) {
+      font-size: 2.5rem;
+    }
+
     span {
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
@@ -68,6 +81,9 @@
     display: flex;
     align-items: center;
     padding: 7.5rem 8rem 3.5rem 8rem;
+    @media only screen and (max-width: 576px) {
+      flex-direction: column;
+    }
   }
 
   &__info {
@@ -111,6 +127,10 @@
 
     margin-left: auto;
     margin-right: 1.75rem;
+
+    @media only screen and (max-width: 576px) {
+      margin: auto;
+    }
 
     svg {
       height: 2.25rem;

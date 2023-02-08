@@ -126,6 +126,16 @@ class RecipeView extends View {
           </svg>
         </a>
       </div>
+      <p class="copyright">
+          &copy; Copyright by
+          <a
+            class="twitter-link"
+            target="_blank"
+            href="https://twitter.com/jonasschmedtman"
+            >Jonas Schmedtmann</a
+          >. Use for learning or your portfolio. Don't use to teach. Don't claim
+          as your own.
+        </p>
     `;
   }
   _generateMarkupsIngredient(ing) {
